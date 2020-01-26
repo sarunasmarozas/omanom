@@ -11,10 +11,10 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$monamo-primary: mat-palette($mat-indigo);
+$monamo-primary: mat-palette($mat-green);
 $monamo-accent: mat-palette($mat-pink, A200, A100, A400);
-// $monamo-primary: mat-palette(rgb(22, 21, 21));
-// $monamo-accent: mat-palette(rgb(238, 183, 110));
+// $monamo-primary: rgb(22, 21, 21);
+// $monamo-accent: rgb(238, 183, 110);
 
 // The warn palette is optional (defaults to red).
 $monamo-warn: mat-palette($mat-red);
@@ -36,4 +36,21 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.monamo__logo--container {
+  justify-content: center;
+  align-items: center;
+
+  .monamo__logo {
+    padding: 1rem 0.5rem;
+    max-width: 8rem;
+    height: auto;
+    color: white;
+  }
+}
+
+button.cdk-mouse-focused {
+  outline: none;
+  border: none;
 }

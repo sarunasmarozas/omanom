@@ -1,5 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
+import { HttpClientModule } from "@angular/common/http";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -8,16 +9,25 @@ import { MainComponent } from "./app-level-components/main/main.component";
 import { FooterComponent } from "./app-level-components/footer/footer.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MaterialModule } from "./feature-modules/material-module/material.module";
+import { GalleryComponent } from "./app-level-components/main/components/gallery/gallery.component";
+import { GalleryService } from "./services/gallery.service";
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, MainComponent, FooterComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    MainComponent,
+    FooterComponent,
+    GalleryComponent
+  ],
   imports: [
     BrowserModule.withServerTransition({ appId: "serverApp" }),
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule
   ],
-  providers: [],
+  providers: [GalleryService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

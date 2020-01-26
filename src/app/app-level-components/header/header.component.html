@@ -1,12 +1,53 @@
-<mat-toolbar>
-  <div class="container">
+<mat-toolbar color="primary">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-6 float-left">
-        <button mat-button (click)="onClick($event)">Click me once!</button>
-        <button mat-button (click)="onClick($event)">Click me again!</button>
+      <div class="col-4 monamo__logo--container">
+        <img
+          class="monamo__logo"
+          src="../../../assets/images/placeholder.com-logo4.png"
+          alt="monamo-logo"
+        />
       </div>
-      <div class="col-6 float-right">
-        <p>LOGO</p>
+      <div class="col-4">
+        <button
+          class="monamo__nav--button float-right mr-1"
+          mat-toolbar-item
+          mat-button
+          (click)="onAddGalleryCard()"
+        >
+          Add to Gallery
+        </button>
+        <button
+          class="monamo__nav--button float-right mr-1"
+          mat-toolbar-item
+          mat-button
+          (click)="onShowGalleryCards()"
+        >
+          Show Gallery
+        </button>
+        <button
+          class="monamo__nav--button float-right mr-1"
+          mat-toolbar-item
+          mat-button
+          (click)="onClick($event)"
+        >
+          Gallery
+        </button>
+        <button
+          class="monamo__nav--button float-right mr-1"
+          mat-toolbar-item
+          mat-button
+          (click)="onClick($event)"
+        >
+          Interested in us?
+        </button>
+      </div>
+      <div class="col-4 monamo__logo--container">
+        <img
+          class="monamo__logo float-right"
+          src="../../../assets/images/placeholder.com-logo4.png"
+          alt="monamo-logo"
+        />
       </div>
     </div>
   </div>
