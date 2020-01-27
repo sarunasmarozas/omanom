@@ -1,7 +1,16 @@
 import { Injectable } from "@angular/core";
 import { HttpClient, HttpHeaders, HttpParams } from "@angular/common/http";
+import { Observable } from "rxjs";
 
 // import { addGalleryItems } from "../../environments";
+
+export interface GalleryItem {
+  imgUrl: { type: String; required: true };
+  title: { type: String; required: true };
+  description: { type: String; required: true };
+  location: String;
+  dateCompleted: Date;
+}
 
 @Injectable({
   providedIn: "root"
@@ -27,8 +36,17 @@ export class GalleryService {
     });
   }
 
-  getGallerycard() {
+  getGalleryItems(): Observable<GalleryItem[]> {
     console.log("getGallerycard");
-    return this.http.get("http://localhost:4200/api/gallery-items");
+    const reqHeaders: HttpHeaders = new HttpHeaders()
+      .set("Access-Control-Allow-Origin", "*")
+      .set("Content-type", "application/json; charset=utf-8");
+
+    return this.http.get<GalleryItem[]>(
+      "http://localhost:5000/api/gallery-items",
+      {
+        headers: reqHeaders
+      }
+    );
   }
 }

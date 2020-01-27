@@ -1,14 +1,20 @@
 const router = require("express").Router();
 let GalleryCard = require("./gallery-card.model");
 
-router.route("/api/get-gallery-items").get((req, res) => {
+router.route("/gallery-items/").get((req, res) => {
   GalleryCard.find()
     .then(galleryItems => res.json(galleryItems))
     .catch(err => res.status(400).json("Error: " + err));
 });
 
+// router.route("/").get((req, res) => {
+//   GalleryCard.find()
+//     .then(galleryItems => res.json(galleryItems))
+//     .catch(err => res.status(400).json("Error: " + err));
+// });
+
 // for future use, update UI that an authenticated user could add new cards
-router.route("/api/gallery-items/add").post((req, res) => {
+router.route("/gallery-items/add").post((req, res) => {
   const imgUrl = req.body.imgUrl;
   const title = req.body.title;
   const description = req.body.description;

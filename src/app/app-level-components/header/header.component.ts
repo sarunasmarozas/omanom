@@ -7,17 +7,8 @@ import { GalleryService } from "src/app/services/gallery.service";
   styleUrls: ["./header.component.scss"]
 })
 export class HeaderComponent implements OnInit {
-  constructor(private galleryService: GalleryService) {}
+  constructor() {}
 
   ngOnInit() {}
 
-  onAddGalleryCard() {
-    console.log("onAddGalleryCard");
-    this.galleryService.addGalleryCard().subscribe();
-  }
-
-  onShowGalleryCards() {
-    console.log("onShowGalleryCards");
-    this.galleryService.getGallerycard().subscribe();
-  }
 }
