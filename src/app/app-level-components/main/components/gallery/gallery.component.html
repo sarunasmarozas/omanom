@@ -1,19 +1,12 @@
-<div class="container">
-  <mat-grid-list cols="2" rowHeight="2:1">
+<div class="container gallery__container">
+  <mat-grid-list cols="2" rowHeight="2:1" gutterSize="1rem">
     <ng-container *ngFor="let item of galleryItems">
       <mat-grid-tile>
-        <div class="card mb-5" style="width: 22rem;">
-          <img
-            src="{{ item.imgUrl }}"
-            class="card-img-top"
-            alt="{{ item.title }}"
-          />
-          <div class="card-body">
-            <h5 class="card-title">{{ item.title }}</h5>
-            <p class="card-text">{{ item.description }}</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
+        <img
+          src="{{ item.imgUrl }}"
+          class="card-img-top"
+          alt="{{ item.title }}"
+        />
       </mat-grid-tile>
     </ng-container>
   </mat-grid-list>

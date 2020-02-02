@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MaterialModule } from "./feature-modules/material-module/material.module";
 import { GalleryComponent } from "./app-level-components/main/components/gallery/gallery.component";
 import { GalleryService } from "./services/gallery.service";
+import { SideNavComponent } from "./app-level-components/main/components/side-nav/side-nav.component";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { GalleryService } from "./services/gallery.service";
     HeaderComponent,
     MainComponent,
     FooterComponent,
-    GalleryComponent
+    GalleryComponent,
+    SideNavComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: "serverApp" }),
