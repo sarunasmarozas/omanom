@@ -12,6 +12,9 @@ import { MaterialModule } from "./feature-modules/material-module/material.modul
 import { GalleryComponent } from "./app-level-components/main/components/gallery/gallery.component";
 import { GalleryService } from "./services/gallery.service";
 import { SideNavComponent } from "./app-level-components/main/components/side-nav/side-nav.component";
+import { AboutComponent } from "./app-level-components/main/components/about/about.component";
+import { ContactsComponent } from "./app-level-components/main/components/contacts/contacts.component";
+import { TechComponent } from "./app-level-components/main/components/tech/tech.component";
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { SideNavComponent } from "./app-level-components/main/components/side-na
     MainComponent,
     FooterComponent,
     GalleryComponent,
-    SideNavComponent
+    SideNavComponent,
+    AboutComponent,
+    ContactsComponent,
+    TechComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: "serverApp" }),
