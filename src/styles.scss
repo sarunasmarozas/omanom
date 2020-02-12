@@ -76,12 +76,15 @@ button.cdk-mouse-focused {
 
 .home__wrapper {
   grid-area: home;
-  background-color: rgb(199, 117, 117);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .main__wrapper {
   grid-area: main;
   background-color: rgb(150, 150, 197);
+  background-color: black;
 }
 
 .services__wrapper {

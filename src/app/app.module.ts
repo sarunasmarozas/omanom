@@ -15,6 +15,7 @@ import { SideNavComponent } from "./app-level-components/main/components/side-na
 import { AboutComponent } from "./app-level-components/main/components/about/about.component";
 import { ContactsComponent } from "./app-level-components/main/components/contacts/contacts.component";
 import { TechComponent } from "./app-level-components/main/components/tech/tech.component";
+import { HomeComponent } from './app-level-components/main/components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { TechComponent } from "./app-level-components/main/components/tech/tech.
     SideNavComponent,
     AboutComponent,
     ContactsComponent,
-    TechComponent
+    TechComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: "serverApp" }),

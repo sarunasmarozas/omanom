@@ -16,6 +16,7 @@ nav {
 
 nav.active {
   transform: translateX(0);
+  box-shadow: 2.5px 2.5px 5px black;
 }
 
 nav ul {
@@ -51,6 +52,7 @@ nav a:hover {
   transform: translateX(100%);
   font-size: 1.5rem;
   padding: 1rem 1rem;
+  box-shadow: 2.5px 2.5px 5px black;
 }
 
 .toggle:focus {

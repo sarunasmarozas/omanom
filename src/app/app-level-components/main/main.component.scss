@@ -1,0 +1,17 @@
+.monamo__about--wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "none"
+    ""
+    ""
+    ""
+    ""
+    "";
+}
+
+.monamo__testing--header {
+  //   grid-area: testing-header / col2-start / col3-end / 7;
+  background-color: white;
+}
