@@ -32,17 +32,21 @@ $monamo-theme: mat-light-theme($monamo-primary, $monamo-accent, $monamo-warn);
 
 html,
 body {
-  height: 100%;
-  // background-image: url("./assets/images/mist-background.png");
-  // f5eeee
-  background-color: #f8f6f6;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: center center;
-  font-family: "Roboto", sans-serif;
-  // min-height: 100vh;
+  width: 100%;
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #f8f6f6;
+  font-family: "Roboto", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .monamo__logo--container {
@@ -64,14 +68,14 @@ button.cdk-mouse-focused {
 
 .monamo__wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
-  grid-template-rows: 100vh 100vh 100vh 100vh 100vh;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 100vh);
   grid-template-areas:
-    "home       home      home      home      home"
-    "main       main      main      main      main"
-    "services   services  services  services  services"
-    "portfolio  portfolio portfolio portfolio portfolio"
-    "contacts   contacts  contacts  contacts  contacts";
+    "home       home      home      home"
+    "main       main      main      main";
+  // "services   services  services  services"
+  // "portfolio  portfolio portfolio portfolio"
+  // "contacts   contacts  contacts  contacts";
 }
 
 .home__wrapper {
@@ -84,7 +88,6 @@ button.cdk-mouse-focused {
 .main__wrapper {
   grid-area: main;
   background-color: rgb(150, 150, 197);
-  background-color: black;
 }
 
 .services__wrapper {

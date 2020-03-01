@@ -1,4 +1,15 @@
 <app-side-nav></app-side-nav>
-<div class="monamo__about--wrapper">
-  <h1 class="monamo__testing--header">TESTING!</h1>
+<div class="container-fluid monamo__about--wrapper">
+  <div class="row px-3 align-items-center justify-content-center">
+    <div
+      *ngFor="let card of cards"
+      [ngClass]="{ 'card-at-least-md': atLeastMd }"
+      class="col-md-4 card"
+    >
+      <img class="monamo__about-image" src="{{ card.imageUrl }}" alt="monamo" />
+      <div class="card-content">
+        <p class="card-title">{{ card.description }}</p>
+      </div>
+    </div>
+  </div>
 </div>
