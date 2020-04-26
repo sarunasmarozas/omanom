@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MaterialModule } from "./feature-modules/material-module/material.module";
 import { GalleryService } from "./services/gallery.service";
 import { SideNavComponent } from './app-level-components/main/components/side-nav/side-nav.component';
+import { ImageSliderComponent } from './app-level-components/main/components/image-slider/image-slider.component';
 
 @NgModule({
   declarations: [
@@ -17,13 +18,14 @@ import { SideNavComponent } from './app-level-components/main/components/side-na
     MainComponent,
     FooterComponent,
     SideNavComponent,
+    ImageSliderComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: "serverApp" }),
     HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
   ],
   providers: [GalleryService],
   bootstrap: [AppComponent]
