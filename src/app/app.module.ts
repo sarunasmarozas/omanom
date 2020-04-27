@@ -11,6 +11,7 @@ import { MaterialModule } from "./feature-modules/material-module/material.modul
 import { GalleryService } from "./services/gallery.service";
 import { SideNavComponent } from './app-level-components/main/components/side-nav/side-nav.component';
 import { ImageSliderComponent } from './app-level-components/main/components/image-slider/image-slider.component';
+import { AboutComponent } from './app-level-components/main/components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ImageSliderComponent } from './app-level-components/main/components/ima
     FooterComponent,
     SideNavComponent,
     ImageSliderComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: "serverApp" }),

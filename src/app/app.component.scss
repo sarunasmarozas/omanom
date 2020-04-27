@@ -1,15 +1,24 @@
 // TODO: remove borders
 .monamo--wrapper {
     border: 1px solid green;
+    overflow-y: hidden;
 }
 
 .monamo--section {
     border: 1px solid red;
     height: 100vh;
+    overflow-y: hidden;
 }
 
 .monamo--section-col {
     border: 1px solid green;
     margin: 0;
     padding: 0;
+    overflow-y: hidden;
+}
+
+.monamo--section-col-about {
+    background-image: url('../assets/images/blueprint.jpg');
+    background-size: cover;
+    background-repeat: none;
 }

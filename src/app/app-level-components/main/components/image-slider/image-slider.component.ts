@@ -34,17 +34,17 @@ export class ImageSliderComponent implements OnInit, OnDestroy {
     //   console.log(this.uri);
 
     // });
-        setInterval(() => {
-          this.uri = `url(../../../../../assets/images/${
-            this.images[this.random]
-          })`;
+        // setInterval(() => {
+        //   this.uri = `url(../../../../../assets/images/${
+        //     this.images[this.random]
+        //   })`;
 
-          console.log(this.uri);
+        //   console.log(this.uri);
     
-        }, 5000);
+        // }, 5000);
   }
 
   ngOnDestroy(): void {
-    this.subscription.unsubscribe();
+    // this.subscription.unsubscribe();
   }
 }
