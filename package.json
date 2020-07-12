@@ -2,7 +2,6 @@
   "name": "monamo",
   "version": "0.0.0",
   "scripts": {
-    "install": "npm install",
     "ng": "ng",
     "start": "ng serve",
     "init-db": "node backend/mongo-server.js",
