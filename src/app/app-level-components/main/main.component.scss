@@ -1,60 +1,75 @@
-// @mixin for-tablet-up {
-//   @media (min-width: 768px) {
-//     @content;
-//   }
-// }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
 
-// .monamo__about--wrapper {
-// @include for-tablet-up {
-// display: grid;
-// grid-template-columns: repeat(auto-fit, minmax(auto, auto));
-// }
-// }
-
-// .monamo__about {
-//   color: red;
-// }
-
-// .monamo__about--list {
-//   list-style: none;
-//   margin: 0;
-//   padding: 0;
-
-//   @include for-tablet-up {
-//     display: flex;
-//     justify-content: space-around;
-//   }
-// }
-
-// li {
-//   margin-bottom: 1em;
-//   background: white;
-
-//   @include for-tablet-up {
-//     width: 31%;
-//   }
-// }
-
-.card-content {
-  padding: 1.5em;
-}
-
-.monamo__about--wrapper {
-  padding: 15vh 0;
-}
-
-.monamo__about-image {
-  max-height: 406px;
-  max-width: auto;
+  padding: 3rem 5rem;
 }
 
 .card {
-  z-index: 0;
+  cursor: pointer;
+  background-color: transparent;
+  height: 300px;
+  perspective: 1000px;
+  border: none !important;
 }
 
-.card-at-least-md:hover {
-  transform: scale(1.1);
-  transition: transform 500ms ease;
-  z-index: 1;
-  background: rgb(192, 188, 188);
+.card h1 {
+  font-size: 25px;
+  border-bottom: 1px #fff solid;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card-back {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  transform: rotateY(180deg);
+}
+
+.card li {
+  list-style: none;
+  padding-bottom: 10px;
+  margin: auto;
+  // white-space: nowrap;
+}
+
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
 }
