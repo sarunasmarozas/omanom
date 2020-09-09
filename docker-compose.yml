@@ -1,0 +1,18 @@
+version: "3.5"
+services:
+  mongodb-service:
+    container_name: mongoDBcontainer
+    build: /home/sharis/portfolio/Angular/monamo/monamo
+    volumes:
+      - "/home/sharis/portfolio/Angular/monamo/monamo:/home/sharis/docker/node"
+    ports:
+      - "8080:8080"
+  angular-service:
+    container_name: angularcontainer
+    build: /home/sharis/portfolio/Angular/monamo/monamo
+    volumes:
+      - "/home/sharis/portfolio/Angular/monamo/monamo:/home/sharis/docker/angular"
+    ports:
+      - "4200:4200"
+    command: >
+      bash -c "npm install && ng serve --host 0.0.0.0 --port 4200"

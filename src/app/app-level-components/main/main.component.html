@@ -1,2 +1,16 @@
-<p>main works!</p>
-<app-gallery></app-gallery>
+<app-side-nav></app-side-nav>
+<div class="cards">
+  <div *ngFor="let card of cards" class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="{{ card.imageUrl }}" alt="monamo" />
+      </div>
+      <div class="card-back">
+        <ul>
+          <li><strong>House Name:</strong> {{ card.title }}</li>
+          <li><strong>Description:</strong> {{ card.description }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

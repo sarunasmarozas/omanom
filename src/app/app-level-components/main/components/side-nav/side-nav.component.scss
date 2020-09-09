@@ -1,0 +1,86 @@
+nav {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  margin-bottom: 2rem;
+  padding: 0 4rem 0 4rem;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+nav.active {
+  transform: translateX(0);
+  box-shadow: 2.5px 2.5px 5px black;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin: 2rem 0;
+  text-align: right;
+}
+
+nav a {
+  color: #111;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: #78858b;
+}
+
+.toggle {
+  border: none;
+  outline: none;
+  border-radius: 0 0 5px 0;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+  box-shadow: 2.5px 2.5px 5px black;
+}
+
+.toggle:focus {
+  outline: none;
+}
+
+.toggle .fa-bars {
+  display: block;
+}
+
+.toggle .fa-times {
+  display: none;
+}
+
+nav.active .toggle .fa-bars {
+  display: none;
+}
+
+nav.active .toggle .fa-times {
+  display: block;
+}
+
+.toggle:hover {
+  color: #78858b;
+}
+
+nav .monamo__logo {
+  max-width: 9rem;
+  height: auto;
+  margin-bottom: 50%;
+}
