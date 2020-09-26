@@ -11,8 +11,12 @@ export class SideNavComponent implements OnInit {
   ngOnInit() {}
 
   onToggle() {
-    const nav = document.getElementById("nav");
+    const button = document.getElementById('toggle');
+    const nav = document.getElementById('nav');
+    const header = document.getElementById('experts--header');
 
-    nav.classList.toggle("active");
+    button.classList.toggle('active');
+    nav.classList.toggle('active');
+    header.classList.toggle('active');
   }
 }

@@ -1,31 +1,30 @@
 nav {
-  background-color: #fff;
+  background-color: rgba(204, 228, 252, 0.75);
   display: flex;
   align-items: center;
   justify-content: center;
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   height: 100vh;
+  width: 100vw;
   margin-bottom: 2rem;
   padding: 0 4rem 0 4rem;
-  transform: translateX(-100%);
-  transition: transform 0.3s ease;
-  z-index: 1;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+  z-index: 0;
 }
 
 nav.active {
-  transform: translateX(0);
-  box-shadow: 2.5px 2.5px 5px black;
+  transform: translateX(0%);
 }
 
 nav ul {
-  padding: 0;
   list-style-type: none;
 }
 
 nav ul li {
-  margin: 2rem 0;
+  margin: 2rem;
   text-align: right;
 }
 
@@ -44,15 +43,14 @@ nav a:hover {
 .toggle {
   border: none;
   outline: none;
-  border-radius: 0 0 5px 0;
-  background-color: #fff;
+  border-radius: 0 0 0 5px;
+  background-color: transparent;
   position: absolute;
   top: 0;
   right: 0;
-  transform: translateX(100%);
   font-size: 1.5rem;
   padding: 1rem 1rem;
-  box-shadow: 2.5px 2.5px 5px black;
+  z-index: 1;
 }
 
 .toggle:focus {
@@ -67,11 +65,11 @@ nav a:hover {
   display: none;
 }
 
-nav.active .toggle .fa-bars {
+button#toggle.active .fa-bars {
   display: none;
 }
 
-nav.active .toggle .fa-times {
+button#toggle.active .fa-times {
   display: block;
 }
 
@@ -79,8 +77,42 @@ nav.active .toggle .fa-times {
   color: #78858b;
 }
 
-nav .monamo__logo {
-  max-width: 9rem;
+.monamo__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  max-width: 10rem;
   height: auto;
-  margin-bottom: 50%;
+
+  padding: 1rem;
+}
+
+.experts--header {
+  position: absolute;
+  top: 15.5%;
+  left: 12.5%;
+  padding: 10rem 5rem;
+  margin: 5rem;
+  width: auto;
+
+  border: 0.5rem solid rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: lowercase;
+}
+
+#experts--container {
+  transition: transform 0.5s ease-in-out;
+}
+
+.experts--header {
+  filter: blur(0);
+  transition: filter 0.5s ease-in-out;
+}
+
+.experts--header.active {
+  filter: blur(3rem);
+  transition: filter 0.5s ease-in-out;
 }
