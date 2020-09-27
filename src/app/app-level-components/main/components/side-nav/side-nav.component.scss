@@ -90,17 +90,21 @@ button#toggle.active .fa-times {
 
 .experts--header {
   position: absolute;
-  top: 15.5%;
+  top: 44%;
   left: 12.5%;
-  padding: 10rem 5rem;
-  margin: 5rem;
+  padding: 0.5rem 5rem;
+  margin: 1rem 5rem;
   width: auto;
 
-  border: 0.5rem solid rgba(255, 255, 255, 0.9);
+  border: 0.01rem solid rgba(250, 245, 243, 0.2);
   border-radius: 5px;
 
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(250, 245, 243, 0.9);
+  background-color: rgba(78, 84, 94, 0.25);
+  background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+
   text-transform: lowercase;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #experts--container {
