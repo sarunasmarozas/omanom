@@ -19,8 +19,6 @@ export class GalleryService {
   constructor(private http: HttpClient) {}
 
   addGalleryCard() {
-    console.log("addGalleryCard");
-
     const httpHeaders: HttpHeaders = new HttpHeaders().set(
       "Content-Type",
       "application/json"

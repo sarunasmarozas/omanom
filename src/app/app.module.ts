@@ -16,6 +16,7 @@ import { AboutComponent } from "./app-level-components/main/components/about/abo
 import { ContactsComponent } from "./app-level-components/main/components/contacts/contacts.component";
 import { TechComponent } from "./app-level-components/main/components/tech/tech.component";
 import { HomeComponent } from './app-level-components/main/components/home/home.component';
+import { PrivacyPolicyComponent } from './app-level-components/main/components/privacy-policy/privacy-policy.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { HomeComponent } from './app-level-components/main/components/home/home.
     AboutComponent,
     ContactsComponent,
     TechComponent,
-    HomeComponent
+    HomeComponent,
+    PrivacyPolicyComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: "serverApp" }),

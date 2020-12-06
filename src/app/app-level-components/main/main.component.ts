@@ -8,76 +8,76 @@ import { Component, OnInit, EventEmitter } from "@angular/core";
 export class MainComponent implements OnInit {
   cards = [
     {
-      imageUrl: "../../../assets/images/pexels-1.jpg",
-      title: "Test",
+      imageUrl: "../../../assets/images/card/namas-1.jpg",
+      title: "Namas #1",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident magnam dolorem dicta eum itaque officiis inventore fugiat nesciunt, veniam vel?",
+        "Aprasymas #1",
     },
     {
-      imageUrl: "../../../assets/images/pexels-2.jpg",
-      title: "Another test",
+      imageUrl: "../../../assets/images/card/namas-2.jpg",
+      title: "Namas #2",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident magnam dolorem dicta eum itaque officiis inventore fugiat nesciunt, veniam vel?",
+        "Aprasymas #2",
     },
     {
-      imageUrl: "../../../assets/images/pexels-3.jpg",
-      title: "One test",
+      imageUrl: "../../../assets/images/card/namas-3.jpg",
+      title: "Namas #3",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident magnam dolorem dicta eum itaque officiis inventore fugiat nesciunt, veniam vel?",
+        "Aprasymas #3",
     },
     {
-      imageUrl: "../../../assets/images/pexels-1.jpg",
-      title: "Two test",
+      imageUrl: "../../../assets/images/card/namas-4.jpg",
+      title: "Namas #4",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident magnam dolorem dicta eum itaque officiis inventore fugiat nesciunt, veniam vel?",
+        "Aprasymas #4",
     },
     {
-      imageUrl: "../../../assets/images/pexels-2.jpg",
-      title: "No test",
+      imageUrl: "../../../assets/images/card/namas-5.jpg",
+      title: "Namas #5",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident magnam dolorem dicta eum itaque officiis inventore fugiat nesciunt, veniam vel?",
+        "Aprasymas #5",
     },
     {
-      imageUrl: "../../../assets/images/pexels-3.jpg",
-      title: "Five six",
+      imageUrl: "../../../assets/images/card/namas-6.jpg",
+      title: "Namas #6",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident magnam dolorem dicta eum itaque officiis inventore fugiat nesciunt, veniam vel?",
+        "Aprasymas #6",
     },
     {
-      imageUrl: "../../../assets/images/pexels-1.jpg",
-      title: "Seven",
+      imageUrl: "../../../assets/images/card/namas-7.jpg",
+      title: "Namas #7",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident magnam dolorem dicta eum itaque officiis inventore fugiat nesciunt, veniam vel?",
+        "Aprasymas #7",
     },
     {
-      imageUrl: "../../../assets/images/pexels-2.jpg",
-      title: "Eight nine",
+      imageUrl: "../../../assets/images/card/namas-8.jpg",
+      title: "Namas #8",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident magnam dolorem dicta eum itaque officiis inventore fugiat nesciunt, veniam vel?",
+        "Aprasymas #8",
     },
     {
-      imageUrl: "../../../assets/images/pexels-3.jpg",
-      title: "Ten eleven",
+      imageUrl: "../../../assets/images/card/namas-9.jpg",
+      title: "Namas #9",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident magnam dolorem dicta eum itaque officiis inventore fugiat nesciunt, veniam vel?",
+        "Aprasymas #9",
     },
     {
-      imageUrl: "../../../assets/images/pexels-1.jpg",
-      title: "Twelve",
+      imageUrl: "../../../assets/images/card/namas-10.jpg",
+      title: "Namas #10",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident magnam dolorem dicta eum itaque officiis inventore fugiat nesciunt, veniam vel?",
+        "Aprasymas #10",
     },
     {
-      imageUrl: "../../../assets/images/pexels-2.jpg",
-      title: "Thirteen",
+      imageUrl: "../../../assets/images/card/namas-11.jpg",
+      title: "Namas #11",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident magnam dolorem dicta eum itaque officiis inventore fugiat nesciunt, veniam vel?",
+        "Aprasymas #11",
     },
     {
-      imageUrl: "../../../assets/images/pexels-3.jpg",
-      title: "Fourteen",
+      imageUrl: "../../../assets/images/card/namas-12.jpg",
+      title: "Namas #12",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident magnam dolorem dicta eum itaque officiis inventore fugiat nesciunt, veniam vel?",
+        "Aprasymas #12",
     },
   ];
 
