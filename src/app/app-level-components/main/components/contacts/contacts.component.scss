@@ -1,16 +1,21 @@
 .contacts--wrapper {
-  background-color: rgb(142, 163, 190);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
+
+.contacts--social-container {
+  background-color: rgb(142, 163, 190);
+}
+
+// .contacts--map-container {
+//   background-color: rgb(142, 163, 190);
+// }
 
 #map {
-  height: 50vh;
-  width: 49vw;
+  min-height: 50vh;
+  width: 100vw;
 }
 
-.contacts--header__text {
-  padding-top: 5rem;
-}
 .privacy-policy--link__wrapper {
   margin-top: 2.5rem;
 }

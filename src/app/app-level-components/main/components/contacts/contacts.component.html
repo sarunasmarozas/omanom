@@ -1,8 +1,8 @@
 <div class="container-fluid contacts--wrapper">
-  <div class="row">
-    <div class="col-md-6">
+  <div class="row d-flex d-sm-flex-col d-md-flex-row">
+    <div class="col-sm col-lg-6 py-5 contacts--social-container">
       <div class="container">
-        <div class="row text-center contacts--header__text">
+        <div class="row text-center">
           <h2 class="mx-auto">Mes sukursime jūsų svajonių būstą</h2>
         </div>
         <div class="row mt-5 justify-content-center">
@@ -27,19 +27,19 @@
           </div>
         </div>
         <div class="row mt-5 justify-content-center">
-          <div class="col-3 mx-auto">
-            <div class="row justify-content-end px-1">
+          <div class="col mx-auto justify-content-center">
+            <div class="row justify-content-center px-1 mb-2">
               <a href="tel:+37060778250">+37060778250</a>
             </div>
-            <div class="row justify-content-end px-1">
+            <div class="row justify-content-center px-1">
               <a href="mailto:statyba@monamo.lt">statyba@monamo.lt</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-md-6">
-      <div #mapContainer id="map"></div>
+    <div class="col-sm col-lg-6 p-0 w-100 h-100 contacts--map-container">
+      <div class="w-100 h-100" id="map" #mapContainer></div>
     </div>
   </div>
 </div>

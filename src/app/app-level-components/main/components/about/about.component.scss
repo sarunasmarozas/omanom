@@ -1,8 +1,9 @@
 .about-us--container {
-  padding: 5.5rem;
-  margin: 5.5rem 5.5rem 5.5rem 8.5rem;
+  padding: 1.5rem;
+  margin: 1.5rem;
 
   font-size: 1.5rem;
+  justify-content: center;
 
   background-color: rgba(147, 158, 176, 0.05);
   border-radius: 5px;
@@ -14,18 +15,19 @@
   text-align: right;
   text-transform: uppercase;
   font-size: 1.5rem;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 
   padding-top: 0.2rem;
 }
 
 .about-us--text-colored {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 1.75rem;
   text-align: right;
 
   color: rgb(78, 63, 60);
-
   border-right: 0.1rem solid black;
 }
 
@@ -35,8 +37,18 @@
   color: rgb(104, 96, 93);
 }
 
-
 .highlighted-text {
   color: rgb(147, 158, 176);
   text-transform: uppercase;
+}
+
+.row-filler {
+  height: 2rem;
+  max-height: 2rem;
+}
+
+@media screen and (max-width: 450px) {
+  .about-us--text-colored {
+    border: none;
+  }
 }
