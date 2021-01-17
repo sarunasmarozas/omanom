@@ -89,21 +89,7 @@ button#toggle.active .fa-times {
 }
 
 .experts--header {
-  position: absolute;
-  top: 1rem;
-  width: 50vw;
-
-  border: 0.01rem solid rgba(250, 245, 243, 0.2);
-  border-radius: 5px;
-
-  color: rgba(250, 245, 243, 0.9);
-  background-color: rgba(78, 84, 94, 0.25);
-  background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
-
-  text-transform: lowercase;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 1.25rem;
+  display: none;
 }
 
 #experts--container {
@@ -118,4 +104,25 @@ button#toggle.active .fa-times {
 .experts--header.active {
   filter: blur(3rem);
   transition: filter 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 2560px) {
+  .experts--header {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    width: 50vw;
+
+    border: 0.01rem solid rgba(250, 245, 243, 0.2);
+    border-radius: 5px;
+
+    color: rgba(250, 245, 243, 0.9);
+    background-color: rgba(78, 84, 94, 0.25);
+    background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+
+    text-transform: lowercase;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-size: 1.5rem;
+  }
 }
